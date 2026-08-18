@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Daniela Castiblanco</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Faculty Interview</a></li>
+                <li><a href="#portfolio">Course Planning Notes</a></li>
+				<li><a href="#class1">English 4--</a></li>
+				<li><a href="#class2">English ---</a></li>
+                <li><a href="#reflection">Semester Reflection</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a Colombian girl with unlimited dreams who is in the process of being a leader for the Global fight for human rights. I am also a passionate person for literature and philosophy who loves to transcend and progress ideals, perspectives, and virtues in order to work towards a more inclusive society. Even though my first language is Spanish, it is a unique experience to learn and read in another language.It makes me challenge myself and evolve in personal and professional aspects.I am a really open-minded person who desires to understand society, its population and social context.One day, I wish to represent my country in the United Nations. I truly want to contribute to the quality of people's lives. The struggle against inequality, lack of opportunities, and corruption is what inspires me to work harder and harder every day.</p>
+                <div class="tab-titles">
+				    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+					<p class="tab-links" onclick="opentab('position')">Leadership Positions</p>
+					<p class="tab-links" onclick="opentab('work')">Work Experience on campus</p>
+					<p class="tab-links" onclick="opentab('skills')">Professional Skills</p>
+					<p class="tab-links" onclick="opentab('awards')">Accomplishments/Awards</p>
+                    <p class="tab-links" onclick="opentab('experience')">Comunity Involvement</p>
+                </div>
+				<div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>University of Wisconsin Superior</span><br>Majors: English and Public Leadership and Innovation</li>
+                        <li>Minors: Philosophy and Political Science</li>
+                        <li>GPA 3.951/4.0</li>
+                    </ul>
+                </div>
+				<div class="tab-contents" id="position">
+                    <ul>
+                        <li>President of the Student Government Association: 2023-2024</li>
+						<li>President of the International Peace Studies Association: 2023-2024</li>
+						<li>President of the English Club 2022-2023, 2021-2022</li>
+						<li>President of the Amnesty International 2022-2023</li>
+						<li>Member of the Commencement Speaker Committee: 2023,2024</li>
+						<li>Member of Sigma Tau Delta 2024, 2023</li>
+						<li>Member of the Non-Academic Misconduct Committee: 2023-2024</li>
+						<li>Vice-President of the Phi Sigma Pi 2022</li>
+						<li>Senator of Communication, Literature, and Arts 2022-2023</li>
+						<li>Member of the Sustainability Club 2022-2023, 2021-2022</li>
+                    </ul>
+                </div>
+				<div class="tab-contents" id="work">
+                    <ul>
+                        <li>Student Assistant-International Student Services (ISS) office 2023-2024</li>
+						<li>Content creator for the International Student Services (ISS) office 2023-2024</li>
+						<li>Student Assistant-Graduate Office: 2021-2024</li>
+						<li>Leader for the Weekend of Welcome-New Domestic Students: 2022,2023</li>
+						<li>International Leader-New International Students: 2022,2023</li>
+						<li>Gender Equity Resource Center (GERC) Outreach: 2022-2024</li>
+						<li>Spanish Tutor. 2021-2024</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li>Competent in Microsoft Excel</li>
+						<li>Competent in Microsoft Word</li>
+						<li>Competent in Microsoft PowerPoint</li>
+						<li>Competent in Adobe Acrobat Pro DC</li>
+						<li>Competent in Adobe Premiere Pro</li>
+						<li>Spanish Native Speaker</li>
+						<li>English Native Speaker</li>
+                    </ul>
+                </div>
+				<div class="tab-contents" id="awards">
+                    <ul>
+                        <li>Outstanding Emerging Leadership Award Diploma, University of Wisconsin-Superior 2024</li>
+						<li>National Student Employment Week Certificate, University of Wisconsin-Superior 2024</li>
+						<li>Second Position at the World Quest, University Minnesota Duluth, 2024</li>
+						<li>Delegate of National Model United Nations, Washington D.C., 2023</li>
+						<li>Oluf Haugsrud Scholarship, University of Wisconsin Superior 2023</li>
+						<li>Secretary-General, Model United Nations, Eucharistic School,Bogota, Colombia, 2019</li>
+						<li>Student Representative and President of the Student Government, Eucharistic School,Bogota, Colombia, 2020 </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Volunteer at NGO “Sonar Despierto” Bogota, Colombia, 2023.</span><br>It is an organization by youth volunteers that seeks to transform lives through the promotion of universal values in massive events for children. I contributed to one massive event called “Sonarcity.” This event was divided into multiple fields where children could explore their skills and dreams of what they want to be or achieve in the future.</li>
+                        <li><span>Volunteer at NGO “Corporacion Vuelo” Bogota, Colombia, 2022.</span><br>It is an organization for children in poor conditions who want to explore the field of arts. I was committed to this corporation by teaching children between 5-10 years old how to dance tap and ballet.</li>
+                        <li><span>Volunteer at NGO “Sol en los Andes” Bogota, Colombia, 2019</span><br>It is an organization for children who suffer from illnesses like cancer, I was committed to that NGO by helping kids with activities like drawing, painting, singing, and dancing. I wanted to contribute to their lives by giving them happy moments.</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">English Interview</h1>
+        <div class="services-list">
+            <div>
+                <h2><strong>Question 1</strong></h2>
+                <p><b>What unique perspectives or insight can study English literature offer?</b></p>
+                <ul>
+                    <li>Reading a book is like reading someone else's mind. Readers are able to understand writers' emotions, critical thinking, and their overall vision of the world.</li>
+                    <li>English allows you to believe whatever you are reading even if it contradicts your personal strong beliefs. You become more flexible as a thinker, less surprised by the world.</li>
+                    <li>This major makes you be comfortable with ambiguity and complexity. But also more intrigued by “the secrets” there are in the world. English is a broad field that connects to anything you want. It challenges close-mindedness.</li>
+                </ul>
+                
+            </div>
+            <div>
+                <h2><strong>Question 2</strong></h2>
+                <p><b>In what ways do English language and literature influence cultural understanding and appreciation?</b></p>
+                <ul>
+                    <li>English makes people more tolerant of others’ opinions, beliefs, and cultures.</li>
+                    <li>By diving into a variety of texts, we get a peek into the diverse lifestyles, values, and social norms of various communities.</li>
+                    <li>This exploration not only enriches our historical knowledge but also encourages people to think critically about issues like race, class, and gender.</li>
+                    <li>Literature helps us step into the shoes of others, building empathy and offering new perspectives.</li>
+                </ul>
+                
+            </div>
+            <div>
+                <h2><strong>Question 3</strong></h2>
+                <p><b>Can you share examples of how English has impacted historical and contemporary movements and critical debates?</b></p>
+                <ul>
+                    <li>Since anecdotes have a stronger impact than statistics, politicians that are effective speakers have better engagement.</li>
+                    <li>In the Civil Rights Movement, Dr. Martin Luther King Jr.’s "I Have a Dream" speech used metaphors and imagery to vividly depict racial injustice and the hope for equality, mobilizing widespread support.</li>
+                    <li>Similarly, the feminist movement's metaphor "the glass ceiling" effectively symbolizes the invisible barriers hindering women's professional advancement, sparking debates and policies focused on gender equality.</li>
+                </ul>
+                
+            </div>
+            <div>
+                <h2><strong>Question 4</strong></h2>
+                <p><b>What advice do you have for students who struggle with English but recognize its importance?</b></p>
+                <ul>
+                    <li>This major provides students with strong persuasive skills.</li>
+                    <li>Every business involves writing. English gives students technical skills to know and understand specific audiences and thus speak their same “language”.</li>
+                    <li>In the political field, all speeches must be written by a professional. Any English major can become a boss, due to the persuasive skills.</li>
+                    <li>Take advantage of any opportunities, social events, internships, and even your professors and department.</li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</div>
+           
+
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Course Planning notes</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="foreign.png">
+                <div class="layer">
+                    <h3>Foreign Language Credits</h3>
+                    <p>As an International Student, I do not need to take a foreign language. Speaking Spanish counts as my foreign language.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image2.jpg">
+                <div class="layer">
+                    <h3>English 311: Shakespeare</h3>
+                    <p>I am planning to take it at Towson University during my Study Away.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image3.png">
+                <div class="layer">
+                    <h3>English 218</h3>
+                    <p>No.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image4.jpg">
+                <div class="layer">
+                    <h3>English 479</h3>
+                    <p>Yes, I am currently taking that class.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image5.jpeg">
+                <div class="layer">
+                    <h3>English 491</h3>
+                    <p>Do you want to take the credit-bearing or non-credit bearing? If non-credit, do you know which faculty member you might want to work with? I have not taken it. I am planning to take the credit-bearing in my last semester.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="british.jpg">
+                <div class="layer">
+                    <h3>Survey Courses</h3>
+                    <p>ENGL 211: British Literature I. ENGL 221: American Literature I. ENGL 241: World Literature I. I do not need to take more surveys.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="genre.jpg">
+                <div class="layer">
+                    <h3>Genre and Focused Studies</h3>
+                    <p>I am interested in taking ENGL 229: Literature by Women, FNS 304: American Indian Literature, ENGL 331: British Literary Periods, ENGL 403: 19TH Century British Women Novelists, ENGL 449: Postcolonial Literature.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="surf.jpeg">
+                <div class="layer">
+                    <h3>SURF or McNair</h3>
+                    <p>Yes, I am currently waiting for their response. I applied for the Fellowship Program (200hrs).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="document">
+    <div class="container">
+        <h2 class="sub-title">English 191 – Spring 2024 Major Worksheet</h2><br><br>
+        <h4>Major: English and Public Leadership and Innovation</h4>
+        <h4>Minor(s): Political Science and Philosophy</h4><br>
+        <p>Complete the following questions to the best of your ability.</p><br>
+        <ol>
+            <li>
+                <strong>Have you taken your foreign language credits?</strong>
+                <p>As an International Student, I do not need to take a foreign language. Speaking Spanish counts as my foreign language.</p>
+            </li>
+            <li>
+                <strong>Have you taken English 311: Shakespeare?</strong>
+                <p>I am planning to take it at Towson University during my Study Away.</p>
+            </li>
+            <li>
+                <strong>Have you taken English 218?</strong>
+                <p>No</p>
+            </li>
+			<li>
+                <strong>Have you taken English 479?</strong>
+                <p>Yes, I am currently taking that class.</p>
+            </li>
+			<li>
+                <strong>Have you taken English 491? Do you want to take the credit-bearing or non-credit bearing? If non-credit, do you know which faculty member you might want to work with?</strong>
+                <p>I have not taken it. I am planning to take the credit-bearing in my last semester. </p>
+            </li>
+			<li>
+                <strong>What survey courses have you taken? What ones do you still need to take?</strong>
+                <p>ENGL 211: British Literature I.
+				   ENGL 221: American Literature I.
+				   ENGL 241: World Literature I.
+				   I do not need to take more surveys. 
+				</p>
+            </li>
+			<li>
+                <strong>What genre and focused studies in literature courses are you interested in taking? </strong>
+                <p>I am interested in taking ENGL 229: Literature by Women, FNS 304: American Indian Literature, ENGL 331: British Literary Periods, ENGL 403: 19TH Century British Women Novelists, ENGL 449: Postcolonial Literature.</p>
+            </li>
+			<li>
+                <strong>Are you interested in SURF or McNair? </strong>
+                <p>Yes, I am currently waiting for their response. I applied for the Fellowship Program (200hrs).  </p>
+            </li>
+        </ol>
+		<img src="picture11.jpg">
+		<img src="picture22.jpg">
+    </div>
+</div>
+
+<!-- ----------English 4**------------- -->
+<div id="class4--">
+    <div class="container">
+        <h2 class="sub-title">English 4--</h2><br><br>
+</div>
+</div>
+
+<!-- ----------English ---------------- -->
+<div id="class---">
+    <div class="container">
+        <h2 class="sub-title">English ---</h2><br><br>
+</div>
+</div>
+
+<!-- ----------contact------------- -->
+<div id="reflection">
+    <div class="container">
+         <h2 class="sub-title">Semester Reflection</h2><br><br>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
